@@ -27,6 +27,6 @@ jobs:
     - name: Build and push
       uses: docker/build-push-action@v7
       with:
-        context: "{{defaultContext}}:express-app"
+        context: "./express-app"
         push: true
         tags: user/app:latest
